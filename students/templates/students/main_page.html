@@ -1,0 +1,15 @@
+<!-- students/templates/students/main_page.html -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>სტუდენტის გვერდი</title>
+</head>
+<body>
+    <p>სახელი: {{ student.name }}</p>
+    <p>გვარი: {{ student.surname }}</p>
+    <p>GPA: {{ student.gpa }}</p>
+    <p>კურსი: {{ student.course }}</p>    
+    <a href="{% url 'students' %}">სტუდენტები</a>
+</body>
+</html>

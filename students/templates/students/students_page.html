@@ -1,0 +1,17 @@
+<!-- students/templates/students/students_page.html -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>სტუდენტების სია</title>
+</head>
+<body>
+    <h1>ყველა სტუდენტი</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.name }} {{ student.surname }} - GPA: {{ student.gpa }} (კურსი: {{ student.course }})</li>
+        {% endfor %}
+        </ul>        
+    <a href="{% url 'main' %}">მთავარი გვერდი</a>
+</body>
+</html>
